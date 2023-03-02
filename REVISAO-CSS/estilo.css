@@ -1,0 +1,482 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	padding: 20px;
+	background-color: #ffffff;
+	font-family: Arial, Helvetica, sans-serif;
+}
+h1:nth-child(1){
+	text-align: center;
+}
+h1::first-letter{
+	color: #ff0000;
+	font-size: 2em;
+}
+.deck{
+	padding: 10px;
+	min-width: 100%;
+	min-height: 30px;
+	margin: 10px 0;
+	border: 1px solid lightslategrey;
+}
+
+#botoes-example{
+	margin-top: 10px;
+	display: flex;
+	gap: 10px;
+	flex-wrap: wrap;
+}
+#botoes-example button{
+	cursor: pointer;
+}
+#botao-1{
+	background-color: green;
+	color: #ffffff;
+}
+#botao-2{
+	background-color: yellow;
+	color: #000000;
+	border: none;
+}
+#botao-3{
+	background-color: white;
+	color: black;
+	border: 1px solid blue;
+	font-size: 14pt;
+}
+#botao-4{
+	background-color: black;
+	color: #ffffff;
+	border: none;
+	font-size: 12pt;
+	padding: 6px;
+}
+#botao-5{
+	background-color: #ffffff;
+	color: #000000;
+	border: 1px solid #000000;
+	font-size: 12pt;
+	padding: 6px;
+	letter-spacing: 0.5em;
+	font-weight: bold;
+}
+#botao-6{
+	background-color: #ffffff;
+	color: #000000;
+	border: 1px solid #000000;
+	font-size: 12pt;
+	padding: 6px;
+	font-weight: bold;
+	border-radius: 8px;
+}
+#botao-7{
+	width: 400px;
+	background-color: lightskyblue;
+	color: blue;
+	border: none;
+	font-size: 12pt;
+	padding: 20px;
+	font-weight: bold;
+	border-radius: 8px;
+}
+#botao-8{
+	width: 100px;
+	height: 100px;
+	background-color: lightcoral;
+	color: white;
+	border: none;
+	font-size: 10pt;
+	padding: 20px;
+	font-weight: bold;
+	border-radius: 50%
+}
+#botao-9{
+	width: 200px;
+	background-color: lightcoral;
+	color: white;
+	border: none;
+	font-size: 10pt;
+	padding: 20px;
+	font-weight: bold;
+	border-radius: 30px 30px 0 0;
+}
+#botao-10{
+	width: 200px;
+	background-color: lightseagreen;
+	color: white;
+	border: none;
+	font-size: 10pt;
+	padding: 20px;
+	font-weight: bold;
+	border-radius: 10px;
+}
+#botao-10:hover{
+	background-color: #ffffff;
+	color: #000000;
+	border: 1px solid #000000;
+}
+#botao-11{
+	width: 200px;
+	background-color: lightseagreen;
+	color: white;
+	border: none;
+	font-size: 10pt;
+	padding: 20px;
+	font-weight: bold;
+	border-radius: 10px;
+}
+#botao-11:active{
+	background-color: #ffffff;
+	color: #000000;
+	border: 1px solid #000000;
+}
+#botao-12{
+	width: 200px;
+	background-color: lightseagreen;
+	color: white;
+	border: none;
+	font-size: 10pt;
+	padding: 20px;
+	font-weight: bold;
+	border-radius: 10px;
+}
+#botao-12:focus{
+	background-color: #ffffff;
+	color: #000000;
+	border: 1px solid #000000;
+}
+#botao-13{
+	width: 200px;
+	background: linear-gradient(to right ,lightcoral , lightseagreen);
+	color: white;
+	border: none;
+	font-size: 10pt;
+	padding: 20px;
+	font-weight: bold;
+	border-radius: 10px;
+}
+#botao-14{
+	width: 200px;
+	background: linear-gradient(to right ,lightcoral 80% , lightseagreen);
+	color: white;
+	border: none;
+	font-size: 10pt;
+	padding: 20px;
+	font-weight: bold;
+	border-radius: 10px;
+}
+#botao-14:hover{
+	transition: ease-in-out;
+	transition-duration: 3s;
+	background: linear-gradient(to right ,lightcoral 10% , lightseagreen);
+}
+#botao-15{
+	width: 200px;
+	background: white;
+	color: black;
+	border: 1px dashed lightseagreen;
+	font-size: 10pt;
+	padding: 20px;
+	font-weight: bold;
+	border-radius: 10px;
+}
+#botao-15:hover{
+	transition: ease-in-out;
+	transition-duration: 0.3s;
+	box-shadow: 5px 5px 5px 0px lightseagreen;
+}
+#textos-example{
+	margin-top: 10px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	flex-wrap: wrap;
+}
+#textos-example > p{
+	padding: 10px;
+	border: 2px solid;
+}
+#texto-1::first-line{
+	color: red;
+}
+
+#texto-2::first-letter{
+	color: red;
+	font-size: 4em;	
+}
+#texto-3{
+	text-align: justify;
+	text-indent: 40px;
+}
+#texto-4{
+	text-align: justify;
+	text-indent: 40px;
+	text-transform: uppercase;
+	width: 50%;
+	text-decoration-line: line-through;
+}
+
+#texto-5{
+	text-align: justify;
+	font-style: italic;
+	font-size: 16pt;
+}
+#texto-6{
+	text-align: justify;
+	font-weight: bold;
+}
+#texto-7{
+	text-align: justify;
+	word-spacing: 30px;
+}
+#texto-8{
+	text-align: justify;
+	columns: 2;
+	column-rule: #ff0000 1px solid;
+}
+#texto-9{
+	text-align: justify;
+	line-height: 3;
+	text-transform: capitalize;
+}
+#texto-10{
+	list-style: circle;
+	list-style-position: inside;
+}
+#texto-10 ul{
+	list-style: upper-roman;
+	list-style-position: inside;
+	text-indent: 40px;
+}
+
+
+#posiciomento-examples{
+	margin-top: 10px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	flex-wrap: wrap;
+}
+#posiciomento-examples div{
+	padding: 10px;
+	border: 1px solid;
+}
+#absoluto{
+	position: relative;
+	display: flex;
+	gap: 10px;
+	flex-direction: column;
+}
+.absoluto{
+	width: 100%;
+	height: 300px;
+	border: 1px solid black;
+
+}
+
+#disposicao-example{
+	margin-top: 10px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	flex-wrap: wrap;
+}
+#disposicao-example > div{
+	padding: 10px;
+	border: 4px solid;
+}
+#flex{
+	display: flex;
+	padding: 10px;
+}
+#block > div{
+	display: block;
+	padding: 10px;
+}
+
+#inline > div{
+	display: inline;
+	padding: 10px;
+}
+#inline-block > div{
+	display: inline-block;
+	padding: 10px;
+}
+.elemento-exemplo{
+	min-width: 100px;
+	height: 100px;
+	background-color: orange;
+	border: 1px solid black;
+}
+
+.componentes-exemple{
+	display: flex;
+	flex-direction: column;
+	gap: 60px;
+}
+.header{
+	margin: 10px;
+}
+.header header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #1a1a1a;
+	color: #ffffff;
+	padding: 20px;
+}
+
+header ul{
+	list-style-type: none;
+	display: flex;
+	gap: 20px;
+}
+header a{
+	text-decoration: none;
+	color: #ffffff;
+}
+header a:hover{
+	text-decoration: underline;
+	color: #04a8a8;
+}
+
+#card{
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	width: 400px;
+	border: 1px solid black;
+}
+.card-img{
+	width: 100%;
+	height: 300px;
+	background-color: #1a1a1a;
+}
+.card-conteudo{
+	padding: 10px;
+}
+
+.card-conteudo button{
+	width: 100%;
+	padding: 10px;
+	border: none;
+	background-color: #04a8a8;
+	color: #ffffff;
+	font-weight: bold;
+	margin: 10px 0;
+}
+
+.form form{
+	width: 400px;
+}
+form{
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	width: 100%;
+}
+
+form input{
+	padding: 10px;
+	border: 1px solid blue;
+}
+form button{
+	width: 100%;
+	padding: 10px;
+	border: 1px solid gray;
+	color: #000000;
+	font-weight: bold;
+	margin: 10px 0;
+	border-radius: 20px
+}
+
+.banner{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 20px;
+	width: 100%;
+	min-height: 400px;
+	background-image: url('https://unsplash.it/400/400');
+	background-size: cover;
+}
+
+.banner #titulo{
+	font-size: 40pt;
+	text-align: center;
+	color: white;
+
+}
+.banner #subtitulo{
+	font-size: 15pt;
+	text-align: center;
+	color: white;
+}
+.banner button{
+	align-self: center;
+	width: 200px;
+	padding: 10px;
+	border: none;
+	background-color: lightseagreen;
+	color: #ffffff;
+	font-weight: bold;
+	margin: 10px 0;
+	border-radius: 20px
+}
+.desafios-example ul{
+	list-style-position: inside;
+	margin: 10px;
+}
+.desafio1{
+	display: flex;
+	width: 100%;
+	height: 400px;
+	justify-content: space-between;
+	border: 1px solid gray
+}
+.bg-preto{
+	background-color: black;
+	height: 100%;
+	width: 50%;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.desafio1-conteudo{
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+.desafio1-conteudo button{
+	width: 100%;
+	padding: 10px;
+	border: none;
+	background-color: #04a8a8;
+	color: #ffffff;
+	font-weight: bold;
+	margin: 10px 0;
+	border-radius: 20px
+}
+
+.desafio2{
+	display: flex;
+	width: 100%;
+	height: 400px;
+	gap:30px;
+	flex-wrap: wrap;
+}
+.desafio2 .square{
+	min-width: 100px;
+	height: 100px;
+	background-color: black;
+	color: white;
+}
+.desafio2 .square:nth-of-type(odd){
+	background-color: red;
+}
